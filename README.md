@@ -1,39 +1,41 @@
-Fake News Classifier using Machine Learning
+# Fake News Classifier using Machine Learning
+
 This project is a Fake News Detection system built using Natural Language Processing (NLP) and Machine Learning. It classifies news articles as real or fake based on their textual content by leveraging both vectorization techniques and various classification models.
 
-Project Overview
-Loaded and preprocessed a labeled news dataset
+## Project Overview
 
-Converted text into numerical form using:
+- Loaded and preprocessed a labeled news dataset  
+- Converted text into numerical form using:
+  - CountVectorizer
+  - TF-IDF Vectorizer
+- Trained and evaluated multiple machine learning models:
+  - Logistic Regression  
+  - Multinomial Naive Bayes   
+  - Random Forest Classifier
+- Compared models using accuracy, confusion matrix, and classification reports
 
-CountVectorizer
+## Best Performance
 
-TF-IDF Vectorizer
+Achieved 91.61% accuracy using the Random Forest Classifier with TF-IDF Vectorizer.
 
-Trained and evaluated multiple machine learning models:
+## Technologies Used
 
-Logistic Regression
+- Python
+- Jupyter Notebook
+- Pandas, NumPy
+- Scikit-learn
+- CountVectorizer, TfidfVectorizer
+- Matplotlib, Seaborn
 
-Multinomial Naive Bayes
+## Files
 
-Passive Aggressive Classifier
+- `FakeNewsClassifier.ipynb` – Full Jupyter Notebook with all preprocessing, modeling, and evaluation steps
 
-Random Forest Classifier
+## Results Summary
 
-Compared models using accuracy, confusion matrix, and classification reports
+| Model                      | Vectorizer       | Accuracy |
+|---------------------------|------------------|----------|
+| Logistic Regression       | Count / TF-IDF   | ~89%     |
+| Naive Bayes               | Count / TF-IDF   | ~88%     |
+| Random Forest             | TF-IDF           | 91.61%   |
 
- Best Performance
- Achieved 91.61% accuracy using the Random Forest Classifier with TF-IDF Vectorizer
-
-Technologies Used
-Python
-
-Jupyter Notebook
-
-Pandas, NumPy
-
-Scikit-learn
-
-CountVectorizer, TfidfVectorizer
-
-Matplotlib, Seaborn (for visualizations)
