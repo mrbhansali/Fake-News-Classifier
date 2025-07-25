@@ -9,14 +9,14 @@ This project is a Fake News Detection system built using Natural Language Proces
   - CountVectorizer
   - TF-IDF Vectorizer
 - Trained and evaluated multiple machine learning models:
-  - Logistic Regression  
+  - K Nearest Neighbors 
   - Multinomial Naive Bayes   
   - Random Forest Classifier
 - Compared models using accuracy, confusion matrix, and classification reports
 
 ## Best Performance
 
-Achieved 91.61% accuracy using the Random Forest Classifier with TF-IDF Vectorizer.
+Achieved 91.2% accuracy using the Random Forest Classifier with TF-IDF Vectorizer.
 
 ## Technologies Used
 
@@ -33,9 +33,10 @@ Achieved 91.61% accuracy using the Random Forest Classifier with TF-IDF Vectoriz
 
 ## Results Summary
 
-| Model                      | Vectorizer       | Accuracy |
-|---------------------------|------------------|----------|
-| Logistic Regression       | Count / TF-IDF   | ~89%     |
-| Naive Bayes               | Count / TF-IDF   | ~88%     |
-| Random Forest             | TF-IDF           | 91.61%   |
+| Model           | TF-IDF Accuracy (%) | CountVectorizer Accuracy (%) |
+|----------------|---------------------|-------------------------------|
+| Naive Bayes     | 78.7                | 90.3                          |
+| Random Forest   | 91.2                | 90.97                         |
+| K-Nearest Neighbors | 49.2           | 73.8                          |
+
 
